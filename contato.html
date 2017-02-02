@@ -6,8 +6,9 @@
 	<meta charset="utf-8">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/contato.css">
 </head>
-<body class="home">
+<body class="contato">
 	<header class="top">
 		<div class="container">
 			<div class="col-md-5">
@@ -44,119 +45,73 @@
 		</div>
 	</section>
 
-	<section class="apresentacao">
-		<div class="row quem">
-			<div class="container">
+	<section class="form">
+		<div class="container">
+			<div class="row">
 				<div class="col-md-12 text-center">
-					<h1>Quem Somos</h1>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cum veritatis esse perspiciatis quia facere, nobis saepe iste. Veritatis autem quaerat, suscipit est dignissimos explicabo et, cum impedit nobis nemo, ducimus.</p>
+					<h1>Ouvidoria</h1>
+					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quibusdam atque, quia? Esse repellendus praesentium suscipit obcaecati recusandae asperiores voluptas deserunt, laboriosam, unde laudantium quisquam totam numquam debitis, similique ducimus labore.</p>
 				</div>
 			</div>
-		</div>
-		<div class="row fazemos">
-			<div class="container">
-				<div class="col-md-6 text-center">
-					<img src="images/estudantes.png" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem adipisci, ratione, libero possimus est maxime explicabo.</p>
+			<form action="" method="post" class="form-horizontal">
+				<div class="row avisos">
+					<div class="aviso alert alert-dismissible alert-success">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+						<i class="glyphicon glyphicon-thumbs-up"></i> Sua Mensagem foi enviada com sucesso! Em breve um membro da equipe do Grêmio ECI irá retornar o contato.
+					</div>
+					<div class="aviso alert alert-dismissible alert-warning">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+						<i class="glyphicon glyphicon-thumbs-down"></i> Houve um problema na validação do formulário. Verifique se você preencheu todos os campos corretamente.
+					</div>
+					<div class="aviso alert alert-dismissible alert-danger">
+						<button type="button" class="close" data-dismiss="alert" aria-label="Fechar"><span aria-hidden="true">&times;</span></button>
+						<i class="glyphicon glyphicon-remove"></i> Sua mensagem não pôde ser enviada. Tente novamente mais tarde.
+					</div>
 				</div>
-				<div class="col-md-6 text-center">
-					<img src="images/eventos.png" alt="">
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem adipisci, ratione, libero possimus est maxime explicabo.</p>
+				<div class="row">
+					<div class="col-md-6">
+						<label for="nome">
+							Nome:
+						</label>
+						<input type="text" name="nome" class="form-control" id="nome" placeholder="Fulano da Silva">
+					</div>
+					<div class="col-md-6">
+						<label for="email">
+							E-mail:
+						</label>
+						<input type="email" name="email" id="email" class="form-control" placeholder="fulano@poli.ufrj.br">
+					</div>
 				</div>
-			</div>
+				<div class="row">
+					<div class="col-md-6">
+						<label for="ano">Ano de Ingresso:</label>
+						<input type="number" class="form-control" id="ano" min="2004" max="2017" placeholder="2014" name="ano">
+					</div>
+					<div class="col-md-6">
+						<label for="motivo">Motivo do Contato:</label>
+						<select name="motivo" id="motivo" class="form-control">
+							<option value="sugestao">Sugestão</option>
+							<option value="reclamacao">Reclamação</option>
+							<option value="duvida">Dúvida</option>
+						</select>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12">
+						<label for="mensagem">Mensagem:</label>
+						<textarea name="mensagem" id="mensagem" class="form-control"></textarea>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-md-12 text-center">
+						<input class="btn btn-lg btn-default" type="reset" value="Limpar">
+						<input class="btn btn-lg btn-warning" type="submit" value="Enviar">
+					</div>
+				</div>
+			</form>
 		</div>
 	</section>
-	
 
-	<section class="drive">
-		<div class="row">
-			<div class="container">
-				<div class="col-md-6 text-center">
-					<img src="images/google-drive.png" alt="">
-				</div>
-				<div class="col-md-6">
-					<h2>Conheça nosso repositório do Google Drive!</h2>
-					<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ea dolor itaque doloribus dignissimos reprehenderit neque nemo rem accusantium, tenetur quaerat aperiam fuga explicabo facilis optio iure mollitia perspiciatis dolorem voluptatibus?</p>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="equipe">
-		<h3>Nossa Equipe</h3>
-		<div class="row">
-			<div class="container text-center">
-				<div class="col-md-6">
-					<div class="row">
-						<div class="col-md-12">
-							<img src="images/gustavo.jpg" alt="Gustavo Machado">
-							<p>
-								<strong>Gustavo Machado</strong><br>
-								Diretor
-							</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-6">
-							<img src="images/juliano.jpg" alt="Gustavo Machado">
-							<p>
-								<strong>Juliano Marinho</strong><br>
-								Diretor
-							</p>
-						</div>
-						<div class="col-md-6">
-							<img src="images/lucas.jpg" alt="Lucas Santos">
-							<p>
-								<strong>Lucas Santos</strong><br>
-								Diretor
-							</p>
-						</div>
-					</div>
-				</div>
-				<div class="col-md-6">
-					<div class="row">
-						<div class="col-md-6">
-							<img src="images/rodrigo.jpg" alt="Rodrigo Carvalho">
-							<p>
-								<strong>Rodrigo Carvalho</strong><br>
-								Conselheiro
-							</p>
-						</div>
-						<div class="col-md-6">
-							<img src="images/vinicius.jpg" alt="Vinicius Campos">
-							<p>
-								<strong>Vinicius Campos</strong><br>
-								Conselheiro
-							</p>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-md-4">
-							<img src="images/rolim.jpg" alt="Lucas Rolim">
-							<p>
-								<strong>Lucas Rolim</strong><br>
-								Conselheiro
-							</p>
-						</div>
-						<div class="col-md-4">
-							<img src="images/bruno.jpg" alt="Bruno Tomas">
-							<p>
-								<strong>Bruno Tomas</strong><br>
-								Conselheiro
-							</p>
-						</div>
-						<div class="col-md-4">
-							<img src="images/gabriel.jpg" alt="Bruno Tomas">
-							<p>
-								<strong>Gabriel Fonseca</strong><br>
-								Conselheiro
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
 	<footer class="rodape">
 		<div class="container">
 			<div class="row menus">

@@ -1,0 +1,21 @@
+.contato .form form {
+  max-width: 75%;
+  display: block;
+  margin: 0 auto; }
+  .contato .form form div.row {
+    margin-top: 20px;
+    margin-bottom: 40px; }
+  .contato .form form .btn-warning {
+    margin-left: 30px; }
+  .contato .form form .aviso {
+    padding: 15px;
+    font-weight: bold; }
+    .contato .form form .aviso i {
+      display: inline-block;
+      vertical-align: middle;
+      font-size: 30px;
+      margin-right: 15px; }
+  .contato .form form .alert-dismissable .close, .contato .form form .alert-dismissible .close {
+    right: 0; }
+
+/*# sourceMappingURL=contato.css.map */

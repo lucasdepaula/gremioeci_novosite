@@ -20,7 +20,7 @@ header.top {
 	.logo {
 		max-width: 300px;
 	}
-	.col-md-6 {
+	.col-md-5,.col-md-7 {
 		float:none;
 		display: inline-block;
 		vertical-align: bottom;
@@ -81,6 +81,9 @@ section.equipe {
 	}
 	.row {
 		margin:15px 0;
+	}
+	img {
+		max-width: 150px;
 	}
 }
 
